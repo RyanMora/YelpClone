@@ -1,0 +1,37 @@
+import React from 'react';
+
+import HeaderContainer from '../header/header_container';
+import HomeIndex from './home_index';
+import { Redirect } from 'react-router-dom';
+
+class Home extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return (
+      <div id="homepage">
+        <HeaderContainer {...this.rops}/>
+        <div id="upperHomepage">
+          <div id="quote">
+            <h1>
+              Place holder for some stupid ass quote
+            </h1>
+            <h1>
+              - some stupid ass
+            </h1>
+          </div>
+        </div>
+        <div id="midHomepage">
+          <h2 id="trending">Trending shit</h2>
+        </div>
+        <div id="lowerHomepage">
+          <label id="popular"><HomeIndex{...this.props}/></label>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Home;

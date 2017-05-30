@@ -9,7 +9,7 @@ export const receivePlace = place => ({
 });
 
 export const receivePlaces = places => ({
-  type RECEIVE_PLACES,
+  type: RECEIVE_PLACES,
   places
 });
 
