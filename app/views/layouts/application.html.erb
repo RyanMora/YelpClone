@@ -3,9 +3,22 @@
   <head>
     <title>YelpClone</title>
     <%= csrf_meta_tags %>
+    <!-- AIzaSyCsavIBsE-QsA02UY0EZR1EOz7hysmc1E4 -->
+    <script type="text/javascript" src="https://maps.com/maps/api/js?key=<%=ENV['GOOGLE_MAPS']%>"async defer>
+    </script>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+    <script type="text/javascript" src="//widget.cloudinary.com/global/all.js">
+    </script>
+
+    <script type="text/javascript">
+      window.cloudinary_options = {
+        cloud_name: "<%= ENV['CLOUD_NAME'] %>"
+        upload_preset: "<%= ENV['UPLOAD_PRESET'] %>"
+      };
+    </script>
   </head>
 
   <body>

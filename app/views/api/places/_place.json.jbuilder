@@ -1,0 +1,12 @@
+json.extract! place,
+  :id,
+  :name,
+  :address,
+  :city,
+  :state,
+  :zip,
+  :price,
+  :picture_url,
+  :lat,
+  :lng,
+  :phone_num
