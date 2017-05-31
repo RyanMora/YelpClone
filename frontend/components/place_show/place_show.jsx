@@ -29,7 +29,7 @@ class PlaceShow extends React.Component {
         <div id='placeShow'>
           <HeaderContainer {...this.props.place}/>
           <PlaceShowMap place={this.props.place}/>
-          <ul id'placeShowInfo'>
+          <ul id='placeShowInfo'>
             <li id='placeShowName'>{name}</li>
             <li id='placeInfo'>{address}, {city}, {state}, {zip}</li>
             <li id='placeInfo'>{reviews.length} Reviews || {PRICES[price]}</li>
