@@ -13,7 +13,7 @@ const App = () => (
       <AuthRoute path ="/login" component={SessionsFormContainer} />
       <AuthRoute exact path ="/" component={SessionsFormContainer} />
       <AuthRoute path ="/signup" component={SessionsFormContainer} />
-      <Route path="/home" component={HomeContainer} />
+      // <Route path="/home" component={HomeContainer} />
       <Route exact path="/places" component={SearchContainer} />
       <Route path="/places/:placeId" component={PlaceShowContainer} />
     </Switch>

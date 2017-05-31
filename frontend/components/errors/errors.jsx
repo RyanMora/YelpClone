@@ -1,8 +1,9 @@
 import React from 'react';
+
 const Errors = ({errors}) => {
-  if(typeof errors[0 === 'undefined']){
+  if (typeof errors[0] === 'undefined') {
     return <p></p>;
-  }else if (typeof errors[0] === 'string'){
+  } else if (typeof errors[0] === 'string') {
     return (
       <ul>
         {errors.map((error, idx) => <li key={idx}>{error}</li>)}

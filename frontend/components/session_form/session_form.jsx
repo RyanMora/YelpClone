@@ -6,12 +6,12 @@ class SessionForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      username: "",
-      password: ""
+      username: '',
+      password: ''
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.guestLogIn = this.guestLogin.bind(this);
+    this.guestLogIn = this.guestLogIn.bind(this);
   }
 
   componentWillUpdate(){
@@ -96,5 +96,6 @@ class SessionForm extends React.Component {
     );
   }
 }
+
 
 export default withRouter(SessionForm);

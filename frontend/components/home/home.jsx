@@ -12,7 +12,7 @@ class Home extends React.Component {
   render(){
     return (
       <div id="homepage">
-        <HeaderContainer {...this.rops}/>
+        <HeaderContainer {...this.props}/>
         <div id="upperHomepage">
           <div id="quote">
             <h1>
