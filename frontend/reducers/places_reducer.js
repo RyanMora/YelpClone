@@ -2,7 +2,7 @@ import { RECEIVE_PLACES } from '../actions/place_actions';
 
 const PlacesReducer = (state = {}, action) => {
   Object.freeze(state);
-  switch (action.type) {
+  switch(action.type) {
     case RECEIVE_PLACES:
       return action.places;
     default:

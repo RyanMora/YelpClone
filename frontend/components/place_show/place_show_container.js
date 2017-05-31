@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
+
 import { fetchPlace } from '../../actions/place_actions';
 import { fetchReviews, createReview } from '../../actions/review_actions';
 import PlaceShow from './place_show';
 
-const mapStateToProps = (state, {match}) => ({
-  place: state.place,
+const mapStateToProps = (state, { match }) => ({
+  place:  state.place,
   placeId: parseInt(match.params.placeId),
   reviews: state.reviews
 });

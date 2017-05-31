@@ -1,4 +1,4 @@
-#businessShow {
+#placeShow {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   background-color: #f5f5f5;
 }
 
-#businessShowInfo {
+#placeShowInfo {
   border-bottom: 1px dotted black;
   width: 100vw;
   display: flex;
@@ -15,20 +15,20 @@
   align-items: center;
 }
 
-#businessShowName {
+#placeShowName {
   font-size: 45px;
   font-family: $sans;
   letter-spacing: 1px;
   margin: 30px 0 10px 0;
 }
 
-#businessInfo {
+#placeInfo {
   font-size: 20px;
   font-family: $lato;
   padding: 5px;
 }
 
-#businessShowInfo li:last-child {
+#placeShowInfo li:last-child {
   margin-bottom: 15px;
 }
 

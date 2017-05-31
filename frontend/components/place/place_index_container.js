@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+
 import { fetchPlaces } from '../../actions/place_actions';
 import PlaceIndex from './place_index';
 

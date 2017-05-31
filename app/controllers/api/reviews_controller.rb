@@ -28,6 +28,7 @@ class Api::ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:place_id, :user_id, :body, :rating, :picture_url)
+    params.require(:review).permit(:place_id, :user_id,
+                                  :review_text, :rating, :photo_url )
   end
 end

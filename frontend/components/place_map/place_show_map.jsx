@@ -3,7 +3,7 @@ import MarkerManager from '../../util/marker_manager';
 import { values } from 'lodash';
 
 class PlaceShowMap extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
@@ -19,15 +19,15 @@ class PlaceShowMap extends React.Component {
     let marker = new google.maps.Marker({
       position: location,
       map: this.map,
-      animation: googlemaps.Animation.DROP
+      animation: google.maps.Animation.DROP
     });
 
     let place = nextProps.place;
 
-    let content ="<div id='mapWindow'>" +
+    let content = "<div id='mapWindow'>" +
       `<h1>${place.name}</h1>` +
       `<h2>${place.address}, ${place.city}, ${place.state}, ${place.zip}</h2>` +
-    "</div>";
+      "</div>";
 
     const window = new google.maps.InfoWindow({
       content: content,
@@ -43,9 +43,9 @@ class PlaceShowMap extends React.Component {
     });
   }
 
-  render(){
+  render() {
     return(
-      <div id='mapShow-container' ref='mapShow'></div>
+      <div id="mapShow-container" ref="mapShow"></div>
     );
   }
 }

@@ -1,13 +1,13 @@
 export const fetchReviews = (placeId) => {
   return $.ajax({
-    method: 'GET',
+    method: "GET",
     url: `/api/places/${placeId}/reviews`
   });
 };
 
 export const postReview = review => {
   return $.ajax({
-    method: 'POST',
+    method: "POST",
     url: `/api/places/${review.place_id}/reviews`,
     data: {review}
   });
@@ -15,7 +15,7 @@ export const postReview = review => {
 
 export const deleteReview = review => {
   return $.ajax({
-    method: 'DELETE',
+    method: "DELETE",
     url: `/api/places/${review.place_id}/reviews/${review.id}`
   });
 };

@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
+
 import { logout } from '../../actions/session_actions';
+import { fetchPlaces } from '../../actions/place_actions';
 import Header from './header';
 
 const mapStateToProps = ({session}) => ({

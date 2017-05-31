@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       query: ""
@@ -11,36 +11,36 @@ class SearchBar extends React.Component {
     this.handleSearch = this.handleSearch.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.fetchPlaces(this.state);
   }
 
   handleChange(e) {
-    this.setState({query: e.target.value});
+    this.setState({ query: e.target.value });
   }
 
-  handleSearch(e){
+  handleSearch(e) {
     e.preventDefault();
-    this.props.fetchPlcaes(this.state);
+    this.props.fetchPlaces(this.state);
     this.props.history.push('/places');
   }
 
-  render(){
-    return(
-      <form onSubmit={this.handleSearch}>
+  render() {
+    return (
+      <form onSubmit={this.handlSearch}>
         <label id="searchbarLabel">Find:</label>
         <input
-          id='searchbarInput'
-          value={this.state.query}
-          placeholder = 'Place name'
-          onChange ={this.handleChange}
-          />
+          id="searchbarInput"
+          value = {this.state.query}
+          placeholder = "Restaurant name"
+          onChange = {this.handleChange}
+        />
 
-        <button onClick={this.handleSearch}>
-          <i className="fa fa-search"></i>
-        </button>
+      <button onClick={this.handleSearch}>
+        <i className="fa fa-search"></i>
+      </button>
       </form>
-    );
+  );
   }
 }
 

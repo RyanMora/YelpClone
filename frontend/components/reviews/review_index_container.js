@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+
 import ReviewIndex from './review_index';
 import { deleteReview } from '../../actions/review_actions';
 import { clearErrors } from '../../actions/session_actions';

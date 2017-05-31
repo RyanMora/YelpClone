@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
+
 import { logout } from '../../actions/session_actions';
 import { fetchPlaces } from '../../actions/place_actions';
 import Home from './home';
 
 const mapStateToProps = (state) => ({
   currentUser: state.session.currentUser,
-  place: state.places
+  places: state.places
 });
 
 const mapDispatchToProps = dispatch => ({

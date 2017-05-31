@@ -6,7 +6,7 @@ json.extract! place,
   :state,
   :zip,
   :price,
-  :picture_url,
+  :image_url,
   :lat,
   :lng,
-  :phone_num
+  :phone_number

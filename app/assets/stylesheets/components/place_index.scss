@@ -1,4 +1,4 @@
-#businesses {
+#places {
   height: 90%;
   width: 30%;
   position: absolute;
@@ -13,11 +13,11 @@
   background: white;
 }
 
-#businesses::-webkit-scrollbar {
+#places::-webkit-scrollbar {
   width: 0;
 }
 
-#business {
+#place {
   display: flex;
   flex-direction: column;
   background: white;
@@ -29,14 +29,14 @@
   box-shadow: 10px 10px 10px 0 #888888;
 }
 
-#business img {
+#place img {
   height: auto;
   width: 90%;
   margin: 20px auto;
   border-radius: 5px;
 }
 
-#business:hover {
+#place:hover {
   cursor: pointer;
   transition: all .2s ease-in-out;
   transform: scale(1.05);

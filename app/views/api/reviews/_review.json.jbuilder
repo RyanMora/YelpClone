@@ -7,6 +7,6 @@ json.user do
   json.id review.user.id
 end
 
-json.body review.body
+json.review_text review.review_text
 json.rating review.rating
-json.picture_url review.picture_url
+json.photo_url review.photo_url

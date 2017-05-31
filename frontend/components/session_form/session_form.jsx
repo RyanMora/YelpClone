@@ -3,88 +3,91 @@ import { Link, Redirect, withRouter } from 'react-router-dom';
 import ErrorsContainer from '../errors/errors_container';
 
 class SessionForm extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: ''
+      username: "",
+      password: "",
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.guestLogIn = this.guestLogIn.bind(this);
   }
 
-  componentWillUpdate(){
+  componentWillUpdate() {
     this.props.clearErrors();
   }
 
-  update(field){
+  update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
     });
   }
 
-  handleSubmit(e){
+  handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    if(this.props.formType === 'login'){
+    if (this.props.formType === "login") {
       this.props.login(user);
-    }else{
+    } else {
       this.props.signup(user);
     }
   }
 
-  navLink(){
-    if(this.props.formType === 'login'){
-      return <Link to='/signup'>{"Signup pimp!"}</Link>
-    }else{
-      return <Link to='/login'>{"Already a pimp?"}</Link>;
+  navLink() {
+    if (this.props.formType === 'login') {
+      return <Link to='/signup'>{"Become a Foodie"}</Link>;
+    } else {
+      return <Link to='/login'>{"Already a Foodie?"}</Link>;
     }
   }
 
-  guestLogIn(e){
+  guestLogIn(e) {
     e.preventDefault();
-    let user = {username:"guest", password:"password"};
+    let user = { username:"guest", password:"password" };
     this.props.login(user);
   }
 
-  render(){
+  render() {
     let header;
     let submit;
-    if(this.props.formType === 'login'){
-      header = 'Log In';
+
+    if (this.props.formType === 'login'){
+      header = "Log In";
       submit = "Log In";
-    }else{
-      header = "Become a pimp!!!!";
-      submit = 'Sign Up';
+    } else {
+      header = "Become a Foodie";
+      submit = "Sign Up";
     }
 
     return(
-      <div id='login'>
-        <div id='welcomeHeader'>
-          <h1 id='headerLogin'>Pimps</h1>
-          <h2 id='description'>Pimp, this is a yelp clone!</h2>
+      <div id="login">
+        <div id="welcomeHeader">
+          <h1 id="headerLogin">Foodies</h1>
+          <h2 id="description"> - Never get hangry again</h2>
         </div>
 
-        <div id='session-form'>
-          <h1 id='form'>{header}</h1>
+        <div id="session-form">
+          <h1 id="form">{header}</h1>
 
-          <div id='errors'>{<ErrorsContainer/>}</div>
+          <div id="errors">{<ErrorsContainer />}</div>
           <form onSubmit={this.handleSubmit}>
-            <div id='login-form'>
+            <div id="login-form">
               <label>Username</label>
+
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-                />
+              />
 
               <label>Password</label>
-              <input type='password'
+
+              <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                />
+              />
 
-              <div id='buttons'>
+              <div id="buttons">
                 <button type="submit">{submit}</button>
                 {this.navLink()}
                 <button onClick={this.guestLogIn}>Guest Log In</button>
@@ -96,6 +99,5 @@ class SessionForm extends React.Component {
     );
   }
 }
-
 
 export default withRouter(SessionForm);

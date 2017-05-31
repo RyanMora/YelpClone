@@ -10,11 +10,12 @@ const mapOptions = {
 class PlaceMap extends React.Component{
   componentDidMount() {
     this.renderMarkers();
+
     this.showPlace = this.showPlace.bind(this);
     this.renderMarkers = this.renderMarkers.bind(this);
   }
 
-  componentDidUpdate(){
+  componentDidUpdate() {
     this.renderMarkers();
     this.MarkerManager.updateMarkers(this.props.places);
 
@@ -26,20 +27,20 @@ class PlaceMap extends React.Component{
     });
   }
 
-  renderMarkers(){
+  renderMarkers() {
     this.map = new google.maps.Map(this.refs.map, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    this.MarkerManager.updateMarkers(this.props.places)
+    this.MarkerManager.updateMarkers(this.props.places);
   }
 
-  showPlace(marker){
+  showPlace(marker) {
     let placeId = marker.placeId;
     let placeItem = this.props.places[placeId];
 
-    let content ="<div id='mapWindow'>" +
+    let content = "<div id='mapWindow'>" +
       `<h1>${placeItem.name}</h1>` +
       `<h2>${placeItem.address}, ${placeItem.city}, ${placeItem.state}, ${placeItem.zip}</h2>` +
-    "</div>";
+      "</div>";
 
     const window = new google.maps.InfoWindow({
       content: content,
@@ -65,8 +66,8 @@ class PlaceMap extends React.Component{
     });
   }
 
-  render(){
-    return (
+  render() {
+    return(
       <div id="map-container" ref="map"></div>
     );
   }

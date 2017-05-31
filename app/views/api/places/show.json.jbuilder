@@ -1,1 +1,1 @@
-json.partial! 'place', place: @place
+json.partial! "place", place: @place

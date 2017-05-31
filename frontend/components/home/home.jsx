@@ -5,29 +5,34 @@ import HomeIndex from './home_index';
 import { Redirect } from 'react-router-dom';
 
 class Home extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
 
-  render(){
+  render() {
     return (
       <div id="homepage">
         <HeaderContainer {...this.props}/>
+
         <div id="upperHomepage">
           <div id="quote">
             <h1>
-              Place holder for some stupid ass quote
+              "I'll literally kill you"
             </h1>
+
             <h1>
-              - some stupid ass
+              - Albert Einstein
             </h1>
           </div>
+
         </div>
+
         <div id="midHomepage">
-          <h2 id="trending">Trending shit</h2>
+          <h2 id="trending">Hot and New</h2>
         </div>
+
         <div id="lowerHomepage">
-          <label id="popular"><HomeIndex{...this.props}/></label>
+          <label id="popular"> <HomeIndex {...this.props}/> </label>
         </div>
       </div>
     );
