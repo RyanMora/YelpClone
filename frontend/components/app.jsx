@@ -9,8 +9,6 @@ import HomeContainer from './home/home_container';
 import SearchContainer from './place/search_container';
 import PlaceShowContainer from './place_show/place_show_container';
 
-// import HeaderContainer from './header/header_container';
-
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
