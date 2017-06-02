@@ -1,4 +1,4 @@
-# Foodies
+<!-- # Foodies
 [Heroku link][heroku]
 
 [Trello link][trello]
@@ -69,4 +69,4 @@ adequate seed data and sufficient CSS styling:
 
 ### Phase 6: Reviews (1.5 days)
 
-**Objective:** Allow user to submit reviews and look at other reviews
+**Objective:** Allow user to submit reviews and look at other reviews -->
