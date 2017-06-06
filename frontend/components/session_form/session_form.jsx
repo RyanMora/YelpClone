@@ -36,9 +36,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to='/signup'>{"Become a Foodie"}</Link>;
+      return <Link to='/signup'>{"Become a Zelper"}</Link>;
     } else {
-      return <Link to='/login'>{"Already a Foodie?"}</Link>;
+      return <Link to='/login'>{"Already a Zelper?"}</Link>;
     }
   }
 
@@ -56,15 +56,15 @@ class SessionForm extends React.Component {
       header = "Log In";
       submit = "Log In";
     } else {
-      header = "Become a Foodie";
+      header = "Become a Zelper";
       submit = "Sign Up";
     }
 
     return(
       <div id="login">
         <div id="welcomeHeader">
-          <h1 id="headerLogin">Foodies</h1>
-          <h2 id="description"> - Never get hangry again</h2>
+          <h1 id="headerLogin">Zelp</h1>
+          <h2 id="description"> - Find great food in your area!</h2>
         </div>
 
         <div id="session-form">

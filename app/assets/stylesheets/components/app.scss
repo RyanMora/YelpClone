@@ -7,7 +7,7 @@
   width: auto;
   height: auto;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-  url("https://images.pexels.com/photos/9708/food-pizza-restaurant-eating.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  url("http://www.thecornertavern.com/files/2010/12/2072978329031.jpg");
   background-size: cover;
 }
 
@@ -24,6 +24,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
   font-family: $lato;
+  margin-top: -70px;
 }
 
 #errors {
@@ -86,6 +87,7 @@
   font-size: 100px;
   color: white;
   letter-spacing: 1px;
+  margin-right: 100px;
 }
 
 #description {
