@@ -20,10 +20,10 @@
 }
 
 #review button{
-  color: red;
-  background-color: black;
-  border: solid black 1px;
+  color: $wild;
+  border: solid $wild 1px;
   border-radius: 5px;
   height: 25px;
   margin-top: 5px;
+  padding: 5px;
 }
