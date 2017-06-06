@@ -17,11 +17,7 @@ class Home extends React.Component {
         <div id="upperHomepage">
           <div id="quote">
             <h1>
-              "I'll literally kill you"
-            </h1>
-
-            <h1>
-              - Albert Einstein
+              Welcome to Zelp!
             </h1>
           </div>
 

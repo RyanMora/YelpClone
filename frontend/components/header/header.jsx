@@ -26,11 +26,11 @@ class Header extends React.Component {
     return (
       <div id="header">
         <div id="headerLinks">
-          <Link id="homeLink" to="/home">Foodies</Link>
-          <a id="github" href="https://github.com/BrandonTat/yelp_clone">
+          <Link id="homeLink" to="/home">Zelp</Link>
+          <a id="github" href="https://github.com/ryanmora/YelpClone">
             <i className="fa fa-github" aria-hidden="true"></i>
           </a>
-          <a href="https://www.linkedin.com/in/brandon-tat-300815120/">
+          <a href="https://www.linkedin.com/in/ryanmora/">
             <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
