@@ -9,6 +9,7 @@
 #
 
 class Category < ApplicationRecord
+
   validates :category_type, presence: true;
 
   has_many :tags
@@ -16,4 +17,5 @@ class Category < ApplicationRecord
   has_many :places,
     through: :tags,
     source: :place
+    
 end

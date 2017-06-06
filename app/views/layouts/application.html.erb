@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>YelpClone</title>
+
     <%= csrf_meta_tags %>
 
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCsavIBsE-QsA02UY0EZR1EOz7hysmc1E4"%>
@@ -17,9 +19,11 @@
         upload_preset: "<%= ENV["UPLOAD_PRESET"] %>"
       };
     </script>
+
   </head>
 
   <body>
     <%= yield %>
   </body>
+  
 </html>

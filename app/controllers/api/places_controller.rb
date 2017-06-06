@@ -1,4 +1,5 @@
 class Api::PlacesController < ApplicationController
+
   def index
     @places = Place.all
     if params[:query]
@@ -18,4 +19,5 @@ class Api::PlacesController < ApplicationController
     @place = Place.find(params[:id])
     render :show
   end
+  
 end

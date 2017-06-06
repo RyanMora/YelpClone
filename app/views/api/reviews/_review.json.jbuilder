@@ -10,3 +10,4 @@ end
 json.review_text review.review_text
 json.rating review.rating
 json.photo_url review.photo_url
+ 

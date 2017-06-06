@@ -10,8 +10,10 @@
 #
 
 class Tag < ApplicationRecord
+
   validates :category_id, :place_id, presence: true
 
   belongs_to :place
   belongs_to :category
+  
 end

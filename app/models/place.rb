@@ -18,6 +18,7 @@
 #
 
 class Place < ApplicationRecord
+
   validates :name, :address, :city, :state, :zip, :price, :image_url,
             :lat, :lng, presence: true
   validates :name, uniqueness: true
@@ -34,4 +35,5 @@ class Place < ApplicationRecord
     processed_query = "%" + query.split.join("%") + "%"
     places.where("name ILIKE :query", query: processed_query)
   end
+  
 end

@@ -13,9 +13,11 @@
 #
 
 class Review < ApplicationRecord
+
   validates :place_id, :user_id, :review_text, :rating, presence: true
   validates :rating, inclusion: { in: [1, 2, 3, 4, 5] }
 
   belongs_to :place
   belongs_to :user
+  
 end

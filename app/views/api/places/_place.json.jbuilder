@@ -10,3 +10,4 @@ json.extract! place,
   :lat,
   :lng,
   :phone_number
+  
