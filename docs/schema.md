@@ -8,7 +8,7 @@ username        | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 
-## Businesses
+## Places
 column name    | data type | details
 ---------------|-----------|-----------------------
 id             | integer   | not null, primary key
@@ -27,7 +27,7 @@ category_id    | int       | not null, foreign key (references categories), inde
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-business_id | integer   | not null, foreign key (references businesses), indexed
+place_id | integer   | not null, foreign key (references places), indexed
 user_id     | integer   | not null, foreign key (references users), indexed
 review_text | text      | not null
 rating      | integer   | not null, inclusive [1, 2, 3, 4, 5]

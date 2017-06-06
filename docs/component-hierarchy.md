@@ -9,12 +9,12 @@
 **HeaderContainer**
   - Header
 
-**BusinessIndexContainer**
-  - BusinessIndex
+**PlaceIndexContainer**
+  - PlaceIndex
 
-**BusinessIndex**
-  - BusinessIndexItem
-  - BusinessDetailContainer
+**PlaceIndex**
+  - PlaceIndexItem
+  - PlaceDetailContainer
 
 ## Routes
 |Path   | Component   |
@@ -23,5 +23,5 @@
 | "/signup" | "AuthFormContainer" |
 | "/signin" | "AuthFormContainer" |
 | "/home" | "HomeContainer" |
-| "/search |  "BusinessIndexContainer |
-| "/businesses/:businessId" | "BusinessDetailContainer" |
+| "/search |  "PlaceIndexContainer |
+| "/places/:placesId" | "PlaceDetailContainer" |

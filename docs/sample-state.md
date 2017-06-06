@@ -4,11 +4,11 @@
   session: {
     currentUser: {
       id: 1,
-      username: "brandon"
+      username: "ryan"
     }
   },
 
-  businesses: {
+  places: {
     1: {
       name: "Super Duper Burger",
       address: "98 Mission St",
@@ -21,7 +21,7 @@
     }
   }
 
-  business: {
+  place: {
     1: {
       name: "Super Duper Burger",
       address: "98 Mission St",
@@ -45,7 +45,7 @@
           price: 4,
           review: "Great happy hour!",
           reviewer_id: 1,
-          business_id: 1
+          place_id: 1
         }
       }
     }

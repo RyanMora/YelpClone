@@ -24,7 +24,7 @@ class Home extends React.Component {
         </div>
 
         <div id="midHomepage">
-          <h2 id="trending">Hot and New</h2>
+          <h2 id="trending">Featured Restaurants</h2>
         </div>
 
         <div id="lowerHomepage">

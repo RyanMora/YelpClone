@@ -20,17 +20,17 @@ adequate seed data and sufficient CSS styling:
     * New account creation
     * Login/logout for registered users
     * Guest/demo login
-4. Business Page
-    * Business info (name, address, website, etc.)
-    * Business details (hours of operations, reservations, delivery, etc.)
-    * Photos pertaining to business (food, environment, menu, etc.)
+4. Place Page
+    * Place info (name, address, website, etc.)
+    * Place details (hours of operations, reservations, delivery, etc.)
+    * Photos pertaining to place (food, environment, menu, etc.)
 5. Reviews / Ratings
-    * Allow users to rate business
-    * Allow users to write reviews about business
-    * Display average ratings and reviews for business
+    * Allow users to rate place
+    * Allow users to write reviews about place
+    * Display average ratings and reviews for place
 6. Map
-    * Allow users to search for businesses around specified area.
-    * On business show page, display close-up map of business location.
+    * Allow users to search for places around specified area.
+    * On place show page, display close-up map of place location.
 
 ## Design Docs
 * [View Wireframes][wireframes]
@@ -55,17 +55,17 @@ adequate seed data and sufficient CSS styling:
 
 **Objective:** Setup functioning home page with links to sign in/sign up
 
-### Phase 3: Business Map (2 days)
+### Phase 3: Place Map (2 days)
 
-**Objective:** Allow user to search for businesses on a map  and to have locations on a map highlighted.
+**Objective:** Allow user to search for places on a map  and to have locations on a map highlighted.
 
 ### Phase 4: Filter (1.5 days)
 
-**Objective:** Allow users to filter businesses through map page based on price, type of food and location.
+**Objective:** Allow users to filter places through map page based on price, type of food and location.
 
-### Phase 5: Business Detail (1.5 days)
+### Phase 5: Place Detail (1.5 days)
 
-**Objective:** Setup a page where business information is displayed. Page will be accessible through links on map page. The business detail page will show price range, reviews, location on map, and possibly photos.
+**Objective:** Setup a page where place information is displayed. Page will be accessible through links on map page. The place detail page will show price range, reviews, location on map, and possibly photos.
 
 ### Phase 6: Reviews (1.5 days)
 

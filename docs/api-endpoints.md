@@ -24,24 +24,24 @@
 - `DELETE /api/session`
   - Signs users out
 
-### Businesses
+### Places
 
-- `GET /api/businesses`
-  - Businesses index
+- `GET /api/places`
+  - Places index
 
--  `GET /api/businesses/:id`
-  - Business show page
+-  `GET /api/places/:id`
+  - Place show page
 
 ### Reviews
 
-- `POST /api/businesses/:businessId/reviews`
-  - Creates review for business
+- `POST /api/places/:placeId/reviews`
+  - Creates review for place
 
 - `PATCH /api/reviews/:id`
-  - Update business review
+  - Update place review
 
 - `DELETE /api/reviews/:id`
-  - Delete business review
+  - Delete place review
 
 **BONUS**
 - `GET /api/users/:userId/reviews`
