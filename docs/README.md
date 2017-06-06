@@ -3,8 +3,7 @@
 
 [Trello link][trello]
 
-[heroku]: https://foodies-yelp-clone.herokuapp.com/#/
-[trello]: https://trello.com/b/hPfeFHWL/foodies
+[heroku]: https://zelpapp.herokuapp.com/
 
 ## Minimum Viable Product
 

@@ -2,7 +2,7 @@
 
 [Heroku Live][heroku]
 
-[heroku]: https://foodies-yelp-clone.herokuapp.com/#/
+[heroku]: https://zelpapp.herokuapp.com/
 
 Zelp is a full-stack web application inspired by Yelp, utilizing
 Ruby on Rails for the backend, a PostgreSQL database, and a React with Redux
